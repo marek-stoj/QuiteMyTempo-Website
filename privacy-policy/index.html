@@ -1,0 +1,81 @@
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- TEMPLATE BEGIN: meta -->
+    <meta property="og:site_name" content="Quite My Tempo" />
+    <meta property="og:url" content="https://www.quitemytempo.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Quite My Tempo" />
+    <meta property="og:description" content="An Open Sandbox for Rhythm Games in Virtual and Mixed Reality (VR/MR)." />
+    <!-- TODO: 2025-07-04 - Immortal - HI - og:image and og:video -->
+    <!-- <meta
+      property="og:image"
+      content="https://www.quitemytempo.com/static/quite-my-tempo/img/meta-image.jpg"
+    />
+    <meta
+      property="og:video"
+      content="https://odysee.com/@BeatLabs:f/beat-labs-retro-drive:b"
+    /> -->
+
+    <meta property="og:locale" content="en_US" />
+    <!-- TEMPLATE END: meta -->
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Google tag (gtag.js) -->
+    <!-- TODO: 2025-07-04 - Immortal - HI - Google Analytics -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BFS97CHYWG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BFS97CHYWG");
+    </script> -->
+
+    <script>
+      try {
+        var userLanguage = navigator.language || navigator.userLanguage;
+
+        if (!userLanguage) {
+          userLanguage = "en";
+        }
+
+        userLanguage = userLanguage.toUpperCase();
+
+        var href = null;
+
+        if (userLanguage.startsWith("EN")) {
+          href = "/en/privacy-policy/";
+        } else {
+          href = "/en/privacy-policy/";
+        }
+
+        if (href) {
+          window.location.href = href;
+        }
+      } catch (error) {
+        console.error(error);
+
+        window.location.href = "/en/privacy-policy/";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Quite My Tempo Privacy Policy</h1>
+
+      <ul>
+        <li>
+          <a href="/en/privacy-policy/">Quite My Tempo Privacy Policy in English</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

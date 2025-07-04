@@ -1,0 +1,30 @@
+#body-container img {
+  border-radius: 15px;
+}
+
+.section-title {
+  margin-top: 30px;
+}
+
+.go-to-agenda {
+  float: right;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.stats-column-left {
+  padding-left: 25px;
+}
+
+.stats-column-right {
+  padding-right: 25px;
+}
+
+.pico-chart-label {
+  font-weight: normal;
+  margin-bottom: 3px;
+}
+
+.gameplay-video {
+  width: 520px;
+}
