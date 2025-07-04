@@ -1,1 +1,117 @@
-Hello, world!
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- TEMPLATE BEGIN: meta -->
+    <meta property="og:site_name" content="Groovy Labs" />
+    <meta property="og:url" content="https://groovylabsgame.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Groovy Labs" />
+    <meta
+      property="og:description"
+      content="An Open Sandbox for Rhythm Games in Virtual and Mixed Reality (VR/MR)."
+    />
+    <meta
+      property="og:image"
+      content="https://www.groovylabsgame.com/static/groovy-labs/img/meta-image.jpg"
+    />
+    <meta
+      property="og:video"
+      content="https://odysee.com/@BeatLabs:f/beat-labs-retro-drive:b"
+    />
+
+    <meta property="og:locale" content="en_US" />
+    <!-- <meta property="og:locale:alternate" content="en_US" /> -->
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <!-- TEMPLATE END: meta -->
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BFS97CHYWG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BFS97CHYWG");
+    </script>
+
+    <script>
+      try {
+        var userLanguage = navigator.language || navigator.userLanguage;
+
+        if (!userLanguage) {
+          userLanguage = "en";
+        }
+
+        userLanguage = userLanguage.toUpperCase();
+
+        var href = null;
+
+        if (userLanguage.startsWith("EN")) {
+          href = "/en/";
+        } else if (userLanguage.startsWith("PL")) {
+          href = "/pl/";
+        } else if (userLanguage.startsWith("DE")) {
+          href = "/de/";
+        } else if (userLanguage.startsWith("ZH")) {
+          href = "/zh/";
+        } else if (userLanguage.startsWith("KO")) {
+          href = "/ko/";
+        } else if (userLanguage.startsWith("FR")) {
+          href = "/fr/";
+        } else if (userLanguage.startsWith("JA")) {
+          href = "/ja/";
+        }
+
+        if (href) {
+          window.location.href = href;
+        }
+      } catch (error) {
+        console.error(error);
+
+        window.location.href = "/en/";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>Groovy Labs</h1>
+
+      <ul>
+        <li>
+          <a href="/en/">Groovy Labs in English</a>
+        </li>
+        <li>
+          <a href="/pl/">Groovy Labs po polsku</a>
+        </li>
+        <li>
+          <a href="/de/">Groovy Labs auf Deutsch</a>
+        </li>
+        <li>
+          <a href="/zh/">中文的Groovy Labs</a>
+        </li>
+        <li>
+          <a href="/ko/">한국어로 Groovy Labs</a>
+        </li>
+        <li>
+          <a href="/fr/">Groovy Labs en français</a>
+        </li>
+        <li>
+          <a href="/ja/">Groovy Labs（日本語）</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
